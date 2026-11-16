@@ -1,0 +1,92 @@
+[
+  {
+    "report_id": "1001",
+    "created_at": "2026-11-07T18:42:00-03:00",
+    "category_code": "ALAG",
+    "location": {
+      "lat": -23.5599,
+      "lon": -46.64005
+    },
+    "description": "Rua completamente alagada na frente da escola, a água está subindo e os carros não conseguem passar. Meu telefone é (11) 98765-4321 se precisarem."
+  },
+  {
+    "report_id": "1002",
+    "created_at": "2026-11-07T18:55:00-03:00",
+    "category_code": "ALAG",
+    "location": {
+      "lat": -23.56005,
+      "lon": -46.63995
+    },
+    "description": "Alagamento forte na Rua das Acácias, água na altura do joelho e tem criança tentando atravessar."
+  },
+  {
+    "report_id": "1003",
+    "created_at": "2026-11-07T19:20:00-03:00",
+    "category_code": "ALAG",
+    "location": {
+      "lat": -23.5601,
+      "lon": -46.6401
+    },
+    "description": "A água da chuva não escoa, já entrou na calçada da escola. Cuidado com a correnteza perto do córrego."
+  },
+  {
+    "report_id": "2001",
+    "created_at": "2026-10-28T08:10:00-03:00",
+    "category_code": "BURACO",
+    "location": {
+      "lat": -23.565,
+      "lon": -46.635
+    },
+    "description": "Buraco enorme no meio da avenida, ontem uma moto caiu aqui."
+  },
+  {
+    "report_id": "2002",
+    "created_at": "2026-10-30T17:00:00-03:00",
+    "category_code": "BURACO",
+    "location": {
+      "lat": -23.56505,
+      "lon": -46.63495
+    },
+    "description": "O buraco aumentou depois da chuva, carros desviando para a outra faixa."
+  },
+  {
+    "report_id": "3001",
+    "created_at": "2026-11-08T05:40:00-03:00",
+    "category_code": "ARVORE",
+    "location": {
+      "lat": -23.54862,
+      "lon": -46.62518
+    },
+    "description": "Árvore caiu em cima do fio de energia e está bloqueando a rua inteira, fio solto no chão."
+  },
+  {
+    "report_id": "3002",
+    "created_at": "2026-11-08T06:05:00-03:00",
+    "category_code": "ARVORE",
+    "location": {
+      "lat": -23.54858,
+      "lon": -46.62522
+    },
+    "description": "Árvore enorme caída na Rua dos Ipês, ambulância não consegue passar."
+  },
+  {
+    "report_id": "4001",
+    "created_at": "2026-11-05T12:00:00-03:00",
+    "category_code": "BURACO",
+    "location": {
+      "lat": -23.57205,
+      "lon": -46.65495
+    },
+    "description": "Buraco na calçada da creche, uma criança tropeçou e se machucou ontem."
+  },
+  {
+    "report_id": "5001",
+    "created_at": "2026-11-06T09:00:00-03:00",
+    "category_code": "LIXO",
+    "location": {
+      "lat": -23.57,
+      "lon": -46.62
+    },
+    "description": "Entulho jogado na praça há dias."
+  }
+]

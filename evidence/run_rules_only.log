@@ -1,0 +1,12 @@
+10:09:06 INFO    citizentech.pipeline: 26 relatos normalizados de 3 canais
+10:09:06 INFO    citizentech.pipeline: classificação: {'fallback_rules': 26}
+10:09:06 INFO    citizentech.pipeline: deduplicação: 23 relatos -> 8 ocorrências (0 decisões do LLM, 1 pares para revisão humana)
+
+OK -> output/rules_only/priority_queue.json
+     output/rules_only/priority_queue.md
+estatísticas: {"reports_in": 26, "occurrences": 8, "triage": 1, "discarded": 2, "analysis_sources": {"fallback_rules": 26}, "ai_calls": {"llm_ok": 0, "llm_repaired": 0, "fallback": 26}, "llm_disabled_reason": null, "dedup_spatial_links": 47, "dedup_llm_merges": 0, "dedup_llm_rejections": 0, "dedup_review_pairs": 1}
+  1. [critica]  94.4  alagamento       9 relato(s)  Rua das Acácias, 120
+  2. [critica]  74.0  arvore_caida     3 relato(s)  Rua dos Ipês, 40
+  3. [alta   ]  52.0  buraco           4 relato(s)  Av. Brasil Nova, 500
+  4. [alta   ]  51.3  bueiro_entupido  2 relato(s)  Rua das Acácias, 90
+  5. [media  ]  47.0  buraco           2 relato(s)  Rua do Comércio, 12

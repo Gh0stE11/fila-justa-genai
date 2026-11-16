@@ -1,0 +1,15 @@
+10:09:06 INFO    citizentech.pipeline: 26 relatos normalizados de 3 canais
+10:09:06 WARNING citizentech.ai: [analyze_report] falha do LLM, usando regras: simulado: HTTP 503 após retries
+10:09:06 WARNING citizentech.ai: [analyze_report] falha do LLM, usando regras: saída inválida após 2 tentativa(s): nenhum objeto JSON encontrado na resposta
+10:09:06 WARNING citizentech.ai: [analyze_report] falha do LLM, usando regras: simulado: HTTP 503 após retries
+10:09:06 INFO    citizentech.pipeline: classificação: {'llm_repaired': 3, 'llm': 20, 'fallback_rules': 3}
+10:09:06 INFO    citizentech.pipeline: deduplicação: 23 relatos -> 7 ocorrências (1 decisões do LLM, 0 pares para revisão humana)
+
+OK -> output/chaos/priority_queue.json
+     output/chaos/priority_queue.md
+estatísticas: {"reports_in": 26, "occurrences": 7, "triage": 1, "discarded": 2, "analysis_sources": {"llm_repaired": 3, "llm": 20, "fallback_rules": 3}, "ai_calls": {"llm_ok": 20, "llm_repaired": 3, "fallback": 3}, "llm_disabled_reason": null, "dedup_spatial_links": 47, "dedup_llm_merges": 1, "dedup_llm_rejections": 0, "dedup_review_pairs": 0}
+  1. [critica]  97.3  alagamento      11 relato(s)  Rua das Acácias, 118
+  2. [critica]  74.0  arvore_caida     3 relato(s)  Rua dos Ipês, 40
+  3. [alta   ]  52.0  buraco           4 relato(s)  Av. Brasil Nova, 500
+  4. [media  ]  47.0  buraco           2 relato(s)  Rua do Comércio, 12
+  5. [baixa  ]  18.3  iluminacao       1 relato(s)  Travessa Lua Nova, 7

@@ -1,0 +1,556 @@
+{
+  "as_of": "2026-11-09T00:00:00-03:00",
+  "llm": {
+    "backend": "openrouter",
+    "model": "openai/gpt-4o-mini",
+    "fallback_models": [],
+    "temperature": 0.0,
+    "max_tokens": 600,
+    "timeout_s": 30.0,
+    "max_retries": 2,
+    "response_mode": "json_schema",
+    "require_parameters": false
+  },
+  "stats": {
+    "reports_in": 26,
+    "occurrences": 7,
+    "triage": 1,
+    "discarded": 1,
+    "analysis_sources": {
+      "llm": 26
+    },
+    "ai_calls": {
+      "llm_ok": 26,
+      "llm_repaired": 0,
+      "fallback": 0
+    },
+    "ai_by_task": {
+      "analyze_report": {
+        "llm_ok": 26,
+        "llm_repaired": 0,
+        "fallback": 0
+      },
+      "same_occurrence": {
+        "llm_ok": 1,
+        "llm_repaired": 0,
+        "fallback": 0
+      },
+      "summarize_cluster": {
+        "llm_ok": 7,
+        "llm_repaired": 0,
+        "fallback": 0
+      }
+    },
+    "llm_disabled_reason": null,
+    "dedup_spatial_links": 56,
+    "dedup_llm_merges": 1,
+    "dedup_llm_rejections": 0,
+    "dedup_review_pairs": 0
+  },
+  "queue": [
+    {
+      "rank": 1,
+      "occurrence_id": "OC-004",
+      "category": "alagamento",
+      "band": "critica",
+      "score": 97.3,
+      "title": "Alagamento na Rua das Acácias em frente à escola",
+      "summary": "Relatos indicam alagamento significativo na Rua das Acácias, dificultando a passagem de veículos e pedestres. A água está em níveis altos, afetando a mobilidade de crianças e idosos na área.",
+      "suggested_team": "drenagem",
+      "n_reports": 12,
+      "channels": [
+        "app",
+        "central_156",
+        "whatsapp"
+      ],
+      "location": {
+        "lat": -23.560072,
+        "lon": -46.640084,
+        "address": "Rua das Acácias, 118"
+      },
+      "first_seen": "2026-11-06T08:45:00-03:00",
+      "report_ids": [
+        "156-88095",
+        "WPP-006",
+        "APP-1001",
+        "WPP-001",
+        "APP-1002",
+        "WPP-002",
+        "156-88121",
+        "WPP-003",
+        "APP-1003",
+        "WPP-004",
+        "156-88140",
+        "WPP-005"
+      ],
+      "factors": [
+        {
+          "name": "tipo_do_problema",
+          "points": 30,
+          "kind": "regra",
+          "detail": "categoria 'alagamento'"
+        },
+        {
+          "name": "volume_de_relatos",
+          "points": 15.0,
+          "kind": "regra",
+          "detail": "12 relatos independentes no mesmo ponto"
+        },
+        {
+          "name": "tempo_em_aberto",
+          "points": 5.3,
+          "kind": "regra",
+          "detail": "aberto há 2.6 dia(s)"
+        },
+        {
+          "name": "proximidade_escola",
+          "points": 12.0,
+          "kind": "espacial",
+          "detail": "escola 'EMEF Helena Prado' a 27 m"
+        },
+        {
+          "name": "proximidade_area_de_risco",
+          "points": 10.0,
+          "kind": "espacial",
+          "detail": "área de risco 'Córrego do Cavalo (área alagável)' a 22 m"
+        },
+        {
+          "name": "ia_risco_a_vida",
+          "points": 12.5,
+          "kind": "ia",
+          "detail": "relato descreve perigo à integridade física (confirmar) [teto de 25 pts para sinais de IA]"
+        },
+        {
+          "name": "ia_bloqueio_de_passagem",
+          "points": 6.7,
+          "kind": "ia",
+          "detail": "relato indica passagem bloqueada (confirmar) [teto de 25 pts para sinais de IA]"
+        },
+        {
+          "name": "ia_pessoas_vulneraveis",
+          "points": 5.8,
+          "kind": "ia",
+          "detail": "relato cita crianças/idosos/escola (confirmar) [teto de 25 pts para sinais de IA]"
+        }
+      ],
+      "ai_signals_need_human_confirmation": [
+        "ia_risco_a_vida",
+        "ia_bloqueio_de_passagem",
+        "ia_pessoas_vulneraveis"
+      ],
+      "ai_evidence": [
+        "a rua das Acácias alagou de vez",
+        "a rua está alagada",
+        "a rua virou um rio",
+        "A água da chuva não escoa",
+        "alagamento aqui na esquina",
+        "alagamento em frente à EMEF",
+        "Alagou de novo, mesmo ponto de ontem",
+        "Boca de lobo entupida em frente ao número 90.",
+        "Bueiro entupido aqui desde semana passada",
+        "carro boiando",
+        "cheio de folha e lixo",
+        "Cuidado com a correnteza perto do córrego.",
+        "Escola está sem aula",
+        "escola sem aula",
+        "idosos não conseguem sair de casa",
+        "já entrou na calçada da escola",
+        "moradores ilhados",
+        "os carros não conseguem passar",
+        "risco de morte pra quem tenta atravessar",
+        "Rua completamente alagada na frente da escola",
+        "tem criança tentando atravessar",
+        "via interditada",
+        "água na altura do joelho",
+        "ônibus parado e ninguém passa"
+      ],
+      "summary_source": "llm",
+      "warnings": []
+    },
+    {
+      "rank": 2,
+      "occurrence_id": "OC-006",
+      "category": "arvore_caida",
+      "band": "critica",
+      "score": 74.0,
+      "title": "Árvore caída bloqueando a Rua dos Ipês",
+      "summary": "Uma árvore caiu na Rua dos Ipês, bloqueando a passagem e atingindo fios de energia. A via está impedida para veículos, incluindo ambulâncias.",
+      "suggested_team": "triagem_humana",
+      "n_reports": 3,
+      "channels": [
+        "app",
+        "central_156"
+      ],
+      "location": {
+        "lat": -23.5486,
+        "lon": -46.6252,
+        "address": "Rua dos Ipês, 40"
+      },
+      "first_seen": "2026-11-08T05:40:00-03:00",
+      "report_ids": [
+        "APP-3001",
+        "APP-3002",
+        "156-88150"
+      ],
+      "factors": [
+        {
+          "name": "tipo_do_problema",
+          "points": 25,
+          "kind": "regra",
+          "detail": "categoria 'arvore_caida'"
+        },
+        {
+          "name": "volume_de_relatos",
+          "points": 9.5,
+          "kind": "regra",
+          "detail": "3 relatos independentes no mesmo ponto"
+        },
+        {
+          "name": "tempo_em_aberto",
+          "points": 1.5,
+          "kind": "regra",
+          "detail": "aberto há 0.8 dia(s)"
+        },
+        {
+          "name": "proximidade_hospital",
+          "points": 15.0,
+          "kind": "espacial",
+          "detail": "hospital 'Pronto-Socorro Vila Nova' a 23 m"
+        },
+        {
+          "name": "ia_risco_a_vida",
+          "points": 15.0,
+          "kind": "ia",
+          "detail": "relato descreve perigo à integridade física (confirmar)"
+        },
+        {
+          "name": "ia_bloqueio_de_passagem",
+          "points": 8.0,
+          "kind": "ia",
+          "detail": "relato indica passagem bloqueada (confirmar)"
+        }
+      ],
+      "ai_signals_need_human_confirmation": [
+        "ia_risco_a_vida",
+        "ia_bloqueio_de_passagem"
+      ],
+      "ai_evidence": [
+        "ambulância não consegue passar",
+        "está bloqueando a rua inteira",
+        "fio solto no chão",
+        "Queda de árvore",
+        "via bloqueada",
+        "Árvore caiu em cima do fio de energia",
+        "Árvore enorme caída na Rua dos Ipês"
+      ],
+      "summary_source": "llm",
+      "warnings": []
+    },
+    {
+      "rank": 3,
+      "occurrence_id": "OC-003",
+      "category": "buraco",
+      "band": "alta",
+      "score": 62.0,
+      "title": "Buraco na calçada da creche na Rua do Comércio",
+      "summary": "Relatos indicam um buraco na calçada da creche, onde uma criança tropeçou e se machucou. O buraco permanece aberto e precisa de atenção.",
+      "suggested_team": "tapa_buraco",
+      "n_reports": 2,
+      "channels": [
+        "app",
+        "whatsapp"
+      ],
+      "location": {
+        "lat": -23.572075,
+        "lon": -46.654975,
+        "address": "Rua do Comércio, 12"
+      },
+      "first_seen": "2026-11-05T12:00:00-03:00",
+      "report_ids": [
+        "APP-4001",
+        "WPP-008"
+      ],
+      "factors": [
+        {
+          "name": "tipo_do_problema",
+          "points": 15,
+          "kind": "regra",
+          "detail": "categoria 'buraco'"
+        },
+        {
+          "name": "volume_de_relatos",
+          "points": 6.0,
+          "kind": "regra",
+          "detail": "2 relatos independentes no mesmo ponto"
+        },
+        {
+          "name": "tempo_em_aberto",
+          "points": 7.0,
+          "kind": "regra",
+          "detail": "aberto há 3.5 dia(s)"
+        },
+        {
+          "name": "proximidade_escola",
+          "points": 12.0,
+          "kind": "espacial",
+          "detail": "escola 'EMEI Pequeno Aprendiz (creche)' a 28 m"
+        },
+        {
+          "name": "ia_risco_a_vida",
+          "points": 15.0,
+          "kind": "ia",
+          "detail": "relato descreve perigo à integridade física (confirmar)"
+        },
+        {
+          "name": "ia_pessoas_vulneraveis",
+          "points": 7.0,
+          "kind": "ia",
+          "detail": "relato cita crianças/idosos/escola (confirmar)"
+        }
+      ],
+      "ai_signals_need_human_confirmation": [
+        "ia_risco_a_vida",
+        "ia_pessoas_vulneraveis"
+      ],
+      "ai_evidence": [
+        "Buraco na calçada da creche",
+        "Buraco na calçada perto da creche",
+        "uma criança tropeçou e se machucou ontem"
+      ],
+      "summary_source": "llm",
+      "warnings": []
+    },
+    {
+      "rank": 4,
+      "occurrence_id": "OC-001",
+      "category": "buraco",
+      "band": "alta",
+      "score": 60.0,
+      "title": "Buraco na Av. Brasil Nova, 500",
+      "summary": "Relatos indicam um buraco grande na avenida, que aumentou após a chuva e causou acidentes com motos e carros. Há solicitações para reparo imediato.",
+      "suggested_team": "tapa_buraco",
+      "n_reports": 4,
+      "channels": [
+        "app",
+        "central_156",
+        "whatsapp"
+      ],
+      "location": {
+        "lat": -23.565037,
+        "lon": -46.634963,
+        "address": "Av. Brasil Nova, 500"
+      },
+      "first_seen": "2026-10-28T08:10:00-03:00",
+      "report_ids": [
+        "APP-2001",
+        "APP-2002",
+        "WPP-007",
+        "156-87702"
+      ],
+      "factors": [
+        {
+          "name": "tipo_do_problema",
+          "points": 15,
+          "kind": "regra",
+          "detail": "categoria 'buraco'"
+        },
+        {
+          "name": "volume_de_relatos",
+          "points": 12.0,
+          "kind": "regra",
+          "detail": "4 relatos independentes no mesmo ponto"
+        },
+        {
+          "name": "tempo_em_aberto",
+          "points": 10.0,
+          "kind": "regra",
+          "detail": "aberto há 11.7 dia(s)"
+        },
+        {
+          "name": "ia_risco_a_vida",
+          "points": 15.0,
+          "kind": "ia",
+          "detail": "relato descreve perigo à integridade física (confirmar)"
+        },
+        {
+          "name": "ia_bloqueio_de_passagem",
+          "points": 8.0,
+          "kind": "ia",
+          "detail": "relato indica passagem bloqueada (confirmar)"
+        }
+      ],
+      "ai_signals_need_human_confirmation": [
+        "ia_risco_a_vida",
+        "ia_bloqueio_de_passagem"
+      ],
+      "ai_evidence": [
+        "Buraco enorme no meio da avenida",
+        "buraco gigante na av brasil nova",
+        "carros desviando para a outra faixa",
+        "já estourou pneu de dois carros",
+        "O buraco aumentou depois da chuva",
+        "ontem uma moto caiu aqui"
+      ],
+      "summary_source": "llm",
+      "warnings": []
+    },
+    {
+      "rank": 5,
+      "occurrence_id": "OC-002",
+      "category": "iluminacao",
+      "band": "baixa",
+      "score": 18.3,
+      "title": "Poste apagado na Travessa Lua Nova",
+      "summary": "Relato de poste apagado há duas semanas, resultando em rua escura à noite.",
+      "suggested_team": "iluminacao",
+      "n_reports": 1,
+      "channels": [
+        "central_156"
+      ],
+      "location": {
+        "lat": -23.558,
+        "lon": -46.628,
+        "address": "Travessa Lua Nova, 7"
+      },
+      "first_seen": "2026-11-04T20:10:00-03:00",
+      "report_ids": [
+        "156-87810"
+      ],
+      "factors": [
+        {
+          "name": "tipo_do_problema",
+          "points": 10,
+          "kind": "regra",
+          "detail": "categoria 'iluminacao'"
+        },
+        {
+          "name": "tempo_em_aberto",
+          "points": 8.3,
+          "kind": "regra",
+          "detail": "aberto há 4.2 dia(s)"
+        }
+      ],
+      "ai_signals_need_human_confirmation": [],
+      "ai_evidence": [
+        "Poste apagado há duas semanas",
+        "rua totalmente escura à noite"
+      ],
+      "summary_source": "llm",
+      "warnings": []
+    },
+    {
+      "rank": 6,
+      "occurrence_id": "OC-007",
+      "category": "buraco",
+      "band": "baixa",
+      "score": 16.0,
+      "title": "Buraco na calçada da Rua Ametista, 33",
+      "summary": "Foi relatado um buraco pequeno na calçada da Rua Ametista, 33.",
+      "suggested_team": "tapa_buraco",
+      "n_reports": 1,
+      "channels": [
+        "whatsapp"
+      ],
+      "location": {
+        "lat": -23.553,
+        "lon": -46.61,
+        "address": "Rua Ametista, 33"
+      },
+      "first_seen": "2026-11-08T11:30:00-03:00",
+      "report_ids": [
+        "WPP-010"
+      ],
+      "factors": [
+        {
+          "name": "tipo_do_problema",
+          "points": 15,
+          "kind": "regra",
+          "detail": "categoria 'buraco'"
+        },
+        {
+          "name": "tempo_em_aberto",
+          "points": 1.0,
+          "kind": "regra",
+          "detail": "aberto há 0.5 dia(s)"
+        }
+      ],
+      "ai_signals_need_human_confirmation": [],
+      "ai_evidence": [],
+      "summary_source": "llm",
+      "warnings": []
+    },
+    {
+      "rank": 7,
+      "occurrence_id": "OC-005",
+      "category": "lixo",
+      "band": "baixa",
+      "score": 11.2,
+      "title": "Entulho na praça",
+      "summary": "Relato de entulho jogado na praça há dias.",
+      "suggested_team": "limpeza_urbana",
+      "n_reports": 1,
+      "channels": [
+        "app"
+      ],
+      "location": {
+        "lat": -23.57,
+        "lon": -46.62,
+        "address": "coordenadas -23.57000, -46.62000"
+      },
+      "first_seen": "2026-11-06T09:00:00-03:00",
+      "report_ids": [
+        "APP-5001"
+      ],
+      "factors": [
+        {
+          "name": "tipo_do_problema",
+          "points": 6,
+          "kind": "regra",
+          "detail": "categoria 'lixo'"
+        },
+        {
+          "name": "tempo_em_aberto",
+          "points": 5.2,
+          "kind": "regra",
+          "detail": "aberto há 2.6 dia(s)"
+        }
+      ],
+      "ai_signals_need_human_confirmation": [],
+      "ai_evidence": [
+        "Entulho jogado na praça há dias."
+      ],
+      "summary_source": "llm",
+      "warnings": []
+    }
+  ],
+  "triage": [
+    {
+      "report_id": "WPP-011",
+      "channel": "whatsapp",
+      "address": "Rua Inexistente, 99",
+      "category": "alagamento",
+      "reason": "endereço não localizado; precisa de triagem humana"
+    }
+  ],
+  "discarded": [
+    {
+      "report_id": "WPP-009",
+      "channel": "whatsapp",
+      "text": "Vocês nunca resolvem nada nessa cidade, só reclamo e ninguém responde.",
+      "reason": "sem problema físico identificável (revisar se necessário)"
+    }
+  ],
+  "dedup": {
+    "llm_decisions": [
+      {
+        "a": "WPP-006",
+        "b": "APP-1003",
+        "distance_m": 45,
+        "method": "llm",
+        "confidence": 0.8,
+        "reason": "Bueiro entupido pode causar alagamento; ambos os relatos referem-se ao mesmo problema na mesma área."
+      }
+    ],
+    "pairs_for_human_review": []
+  }
+}

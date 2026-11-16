@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ESC-01",
+    "type": "escola",
+    "name": "EMEF Helena Prado",
+    "lat": -23.5599,
+    "lon": -46.6399
+  },
+  {
+    "id": "ESC-02",
+    "type": "escola",
+    "name": "EMEI Pequeno Aprendiz (creche)",
+    "lat": -23.57222,
+    "lon": -46.6552
+  },
+  {
+    "id": "HOS-01",
+    "type": "hospital",
+    "name": "Pronto-Socorro Vila Nova",
+    "lat": -23.5485,
+    "lon": -46.625
+  },
+  {
+    "id": "RSK-01",
+    "type": "area_de_risco",
+    "name": "Córrego do Cavalo (área alagável)",
+    "lat": -23.5601,
+    "lon": -46.6403
+  }
+]
