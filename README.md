@@ -27,7 +27,7 @@ Turma: 4ESPR
 | **Arquitetura (este repo)** | Fontes → Normalização → IA (classificar) → Deduplicação (regra espacial + IA) → IA (resumo) → Priorização por regras → `priority_queue.json` |
 | **Fontes de dados** | Dados **simulados** (ver §12), por 3 canais: app, WhatsApp e central 156 |
 | **Modelos de IA** | LLM via OpenRouter (padrão `openai/gpt-4o-mini`, configurável) |
-| **URL do MVP / repositório** | Em desenvolvimento pelo grupo / [github.com/Gh0stE11/fila-justa-genai](https://github.com/Gh0stE11/fila-justa-genai) |
+| **URL do repositório** | [github.com/Gh0stE11/fila-justa-genai](https://github.com/Gh0stE11/fila-justa-genai) |
 | **Indicadores de impacto** | Relatos → ocorrências (taxa de deduplicação), tempo até a 1ª ação, % de ocorrências críticas atendidas no prazo (a medir com a prefeitura) |
 | **ODS** | 11 (Cidades e comunidades sustentáveis), 13 (Ação contra a mudança do clima), 9 (Inovação e infraestrutura), 3 (Saúde e bem-estar). Detalhes na §13 |
 
